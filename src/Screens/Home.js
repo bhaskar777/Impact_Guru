@@ -14,7 +14,8 @@ const Home = (props) => {
 
 	const apiData = async () => {
 		try {
-			let response = await fetch('http://api.tvmaze.com/shows/1/episodes');
+			// let response = await fetch('http://api.tvmaze.com/shows/1/episodes');
+			let response = await fetch('http://api.tvmaze.com/schedule/web?date=2020-05-29&country=US');
 			let data = await response.json();
 			console.log(data);
 			setDetails(data);
@@ -28,7 +29,6 @@ const Home = (props) => {
 		try {
 			let response = await fetch('http://api.tvmaze.com/singlesearch/shows?q=' + text);
 			let data = await response.json();
-			console.log(data);
 			setData(data);
 		} catch (err) {
 			console.log(err);

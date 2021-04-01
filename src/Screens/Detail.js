@@ -11,10 +11,11 @@ const Detail = (props) => {
 				<HomeHeader navigation={props.navigation} />
 				<View>
 					{/* Getting Data from params */}
+					{console.log(props.route.params.item)}
 					<ImageBackground
 						style={styles.image}
 						imageStyle={{ borderRadius: 16 }}
-						source={{ uri: props.route.params.item.image.original }}
+						source={props.route.params.item.image?.original !=undefined? { uri: props.route.params.item.image?.original }:require('../../assets/icons/tv.jpeg')}
 						resizeMode={'cover'}
 					>
 						<Text style={styles.posterText}>Movie Poster</Text>
@@ -26,7 +27,7 @@ const Detail = (props) => {
 							Movie Type: {props.route.params.item.type}
 						</Text>
 						<Text style={[ styles.textStyle ]}>Run time: {props.route.params.item.runtime} in mins</Text>
-						<Text style={[ styles.textStyle ]}>Scedule time: {props.route.params.item.airtime} </Text>
+						<Text style={[ styles.textStyle ]}>Scedule time: {props.route.params.item.airtime != "" ? props.route.params.item.airtime : "Not mentioned"} </Text>
 					</ScrollView>
 				</View>
 			</SafeAreaView>
@@ -44,7 +45,8 @@ const styles = StyleSheet.create({
 	textStyle: {
 		marginStart: 12,
 		marginTop: 8,
-		fontSize: 14
+		fontSize: 14,
+		color:'#fff'
 	},
 	posterText: {
 		color: '#fff',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image, TouchableNativeFeedback, SafeAreaView } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableNativeFeedback, SafeAreaView, Platform, StatusBar } from 'react-native';
 
 const ContactInfoHeader = (props) => {
 	return (
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
 		marginStart: 16,
 		marginEnd: 16,
 		alignItems: 'center',
-		justifyContent: 'space-between'
+		justifyContent: 'space-between',
+		marginTop:Platform.OS==="ios"?0:StatusBar.currentHeight
 	},
 	childView: {
 		flexDirection: 'row',

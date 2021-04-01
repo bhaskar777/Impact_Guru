@@ -13,7 +13,8 @@ const DetailedInformation = (props) => {
         style={styles.detailView}
         colors={['#43cea2', '#4568dc']}
         >
-        <Image source={{uri:props?.item?.image?.medium}} style={styles.imageStyle} />
+        {/* This condition is there to check is image is null or not */}
+        <Image source={props?.item?.image != null ? {uri:props?.item?.image?.medium} : require('../../assets/icons/tv.jpeg')} style={styles.imageStyle} />
         <Text numberOfLines={2} style={styles.nameStyle}>{props.item.name}</Text>
         <Text  style={styles.nameStyle}>Season: {props.item.season}</Text>
         </LinearGradient>
