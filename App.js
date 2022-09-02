@@ -11,6 +11,7 @@ export default function App() {
       {/* <Home/> */}
       <MyStack/>
       {/* http://api.tvmaze.com/shows/1/episodes */}
+      <Text>Bhaskar</Text>
     </View>
   );
 }
