@@ -13,6 +13,7 @@ export default function App() {
       <MyStack/>
       {/* http://api.tvmaze.com/shows/1/episodes */}
       <Text>Bhaskar</Text>
+      <Text>Hello I am bhaskar This is my branch</Text>
     </View>
   );
 }
