@@ -7,6 +7,7 @@ import Home from './src/Screens/Home';
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text>Prabhash Testing</Text>
       {/* <MystatusBar  backgroundColor="#004e92"  /> */}
       {/* <Home/> */}
       <MyStack/>
