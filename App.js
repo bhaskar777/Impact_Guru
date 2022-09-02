@@ -9,6 +9,7 @@ export default function App() {
     <View style={styles.container}>
       {/* <MystatusBar  backgroundColor="#004e92"  /> */}
       {/* <Home/> */}
+      <Text>Hello</Text>
       <Text>psk data 1234567890-</Text>
       <MyStack/>
       {/* http://api.tvmaze.com/shows/1/episodes */}
