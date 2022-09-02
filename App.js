@@ -8,8 +8,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Prabhash Testing</Text>
-      {/* <MystatusBar  backgroundColor="#004e92"  /> */}
-      {/* <Home/> */}
+      <MystatusBar  backgroundColor="#004e92"  />
+      <Home/>
       <Text>psk data 1234567890-</Text>
       <MyStack/>
       {/* http://api.tvmaze.com/shows/1/episodes */}
