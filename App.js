@@ -10,8 +10,11 @@ export default function App() {
       <Text>Prabhash Testing</Text>
       {/* <MystatusBar  backgroundColor="#004e92"  /> */}
       {/* <Home/> */}
+      <Text>psk data</Text>
       <MyStack/>
       {/* http://api.tvmaze.com/shows/1/episodes */}
+      <Text>Bhaskar</Text>
+      <Text>Hello I am bhaskar This is my branch</Text>
     </View>
   );
 }
